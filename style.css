@@ -1,0 +1,266 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #000000;
+background-image: linear-gradient(147deg, #000000 0%, #04619f 74%);
+    height:300vh;
+    font-family: 'Ubuntu', sans-serif !important;
+    
+}
+
+nav{
+    position:fixed;
+    width:100%;
+    display:flex;
+    justify-content:space-around;
+    align-items: center;
+    min-height: 8vh;
+    background-color: #040406;
+}
+
+.row{
+    
+    height: 32vh;
+}
+
+
+#intro{
+    color: rgb(226,226,226);
+    letter-spacing: 3px;
+    border: rgb(255,255,255);
+}
+
+.row4{
+    height:38vh;
+}
+.row4point5{
+    height:7vh;
+}
+.row5{
+    height:5vh;
+}
+.row6{
+    color: #587ba0;
+}
+
+.container-fluid{
+    background-color: #130f40;
+background-image: linear-gradient(315deg, #130f40 0%, #000000 74%);
+
+    height:100vh;
+}
+#whoami{
+    color: #cedae5;
+    height: 50vh;
+}
+
+#extracurricular{
+    color: #6d8cac;
+}
+
+#skills{
+    color: #6d8cac;
+}
+
+#engclubmarginbottom{
+    color: #8b0000;
+}
+#BAPS{
+    color: #8b0000;
+}
+
+.row6point5{
+    height: 50vh;
+}
+#projects{
+    height:5vh;
+}
+
+#projectcontainer{
+    height:92vh;
+    background-color: #e84393;
+background-image: linear-gradient(315deg, #e84393 0%, #000000 74%);
+}
+
+.row7{
+    height:5vh;
+}
+
+.row8{
+    color:#00cc00;
+    height:15vh;
+}
+.row8 #projectdes{
+    color:rgb(226,226,226);
+}
+
+.project1:hover{
+    transform: scale(1.02);
+    transition: transform 500ms;
+}
+
+#footercontainer {
+    height: 10vh;
+    background-color: #040406;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.row9{
+    height: 1vh;
+}
+.row10{
+    color: #cedae5;
+    height:5vh;
+}
+
+.logo{
+    color: rgb(226,226,226);
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 20px;
+}
+.nav-links{
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
+}
+.nav-links li{
+    list-style: none;
+}
+.nav-links a{
+    color: rgb(226,226,226);
+    text-decoration: none !important;
+    letter-spacing: 3px;
+    font-weight:normal;
+    font-size: 16px;
+    
+}
+.nav-links a:hover{
+    color: rgb(255,255,255);
+}
+
+.burger{
+   display:none;
+   cursor: pointer; 
+}
+
+.burger div{
+    width: 25px;
+    height: 2px;
+    background-color: rgb(226,226,226);
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+
+@media screen and (max-width: 1024px){
+    .nav-links{
+        width:60%
+    }
+}
+
+@media screen and (max-width: 1920px) and (min-width: 1024px){
+    .fade-in{
+        opacity: 0;
+        transition: opacity 500ms ease-in;
+    }
+    
+    .fade-in.appear{
+        opacity: 1;
+    }
+}
+
+@media screen and (max-width: 1024px){
+    .fade-insmall{
+        opacity: 0;
+        transition: opacity 500ms ease-in;
+    }
+
+    .fade-insmall.appear{
+        opacity: 1;
+    }
+}
+
+@media screen and (max-width: 462px){
+    .container-fluid{
+        height: 100vh;
+    }
+}
+
+@media screen and (max-width: 400px){
+    .container-fluid{
+        height: 130vh;
+    }
+}
+
+@media screen and (max-width: 280px){
+    .container-fluid{
+        height: 175vh;
+    }
+}
+
+@media screen and (max-width: 768px){
+    body{
+        overflow-x: hidden;
+    }
+    .nav-links{
+        position: absolute;
+        right: 0px;
+        height: 92vh;
+        top: 8vh;
+        background-color: #040406;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+    }
+    .nav-links li{
+        opacity: 0;
+    }
+    .burger{
+        display: block;
+    }
+}
+
+.nav-active{
+    transform: translate(0%);
+}
+
+
+@keyframes navLinkFade{
+    from{
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+.toggle .line1{
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+.toggle .line2{
+    opacity: 0;
+}
+.toggle .line3{
+    transform: rotate(+45deg) translate(-5px, -6px);
+}
+
+@media (min-width: 1200px) {
+    .container{
+        max-width: 970px !important;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container-fluid .container{
+        max-width: 970px !important;
+    }
+}
