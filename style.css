@@ -51,7 +51,7 @@ nav{
     background-color: #130f40;
 background-image: linear-gradient(315deg, #130f40 0%, #000000 74%);
 
-    height:100vh;
+    height:125vh;
 }
 #whoami{
     color: #cedae5;
@@ -73,9 +73,13 @@ background-image: linear-gradient(315deg, #130f40 0%, #000000 74%);
     color: #8b0000;
 }
 
-.row6point5{
-    height: 50vh;
+#S4C{
+    color: #8b0000; 
 }
+.row6point5{
+    height: 75vh;
+}
+
 #projects{
     height:5vh;
 }
